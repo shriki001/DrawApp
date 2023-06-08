@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+
+  client:
+    container_name: Draw_UI
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./client/src:/usr/app/src
+    depends_on:
+      - server
+  
+  server:
+    container_name: Draw_Server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000

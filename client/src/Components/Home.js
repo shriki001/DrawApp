@@ -67,12 +67,12 @@ export default function Home() {
           </Grid>
           <Grid item xs={3} style={{ padding: "20px 10px" }}>
             <Item onClick={(_) => dispatch(GetShape())}>
-              Choose Randome Shape
+              Choose Random Shape
             </Item>
           </Grid>
           <Grid item xs={3} style={{ padding: "20px 10px" }}>
             <Item onClick={(_) => dispatch(GetColor())}>
-              Choose Randome Color
+              Choose Random Color
             </Item>
           </Grid>
           <Grid item xs={3}>
